@@ -1,0 +1,88 @@
+.login {
+    min-height: 100vh;
+    background: linear-gradient(#1e1e2f, #3a1c71); /* Dark mode gradient */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;    
+}
+
+.login.logo {
+    width: max(30vw, 200px);
+    display: none;
+}
+
+.login-form {
+    background: #2a2a3b; /* Dark background */
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.login-form h2 {
+    font-weight: 500;
+    color: #fff; /* White text */
+}
+
+.form-input {
+    padding: 8px 10px;
+    border: 1px solid #8e44ad; /* Matching border */
+    border-radius: 4px;
+    background: #1e1e2f;
+    color: white;
+    outline-color: #8e44ad;
+}
+
+.form-input::placeholder {
+    color: #c8c8c8;
+}
+
+.login-form button {
+    padding: 10px;
+    background-color: #8e44ad; /* Dark purple theme */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #a061d1; /* Lighter shade on hover */
+}
+
+.login-term {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    color: #c8c8c8;
+}
+
+.login-forgot {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-toggle {
+    font-size: 13px;
+    color: #c8c8c8;
+}
+
+.login-toggle span {
+    font-weight: 500;
+    color: #a061d1;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1px;
+    }
+}

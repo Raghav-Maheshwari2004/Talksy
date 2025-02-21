@@ -1,0 +1,38 @@
+.chat {
+    padding: 10px;
+    min-height: 100vh;
+    background: linear-gradient(#1e1e2f, #3a1c71); /* Dark mode gradient */
+    display: grid;
+    place-items: center;
+}
+
+.chat-container {
+    
+    width: 85%;
+    height: 85vh;
+    max-width: 1000px;
+    background: linear-gradient(to right, #29293d, #3a1c71); /* Matching gradient */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    /* Matching border */
+}
+
+.loading {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .chat-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .loading {
+        font-size: 30px;
+    }
+}
