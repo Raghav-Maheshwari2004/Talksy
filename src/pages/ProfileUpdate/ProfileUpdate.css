@@ -84,3 +84,46 @@ textarea::placeholder {
 .profile form button:hover {
     background: linear-gradient(135deg, #9b59b6, #6a42a0);
 }
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        min-width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .profile form {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .profile input, 
+    textarea {
+        min-width: 100%;
+    }
+
+    .profile-pic {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    .profile form {
+        gap: 15px;
+    }
+
+    .profile input, 
+    textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .profile form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
