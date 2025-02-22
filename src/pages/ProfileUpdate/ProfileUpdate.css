@@ -108,14 +108,14 @@ textarea::placeholder {
 }
 @media (max-width: 768px) {
     .profile-container {
-        flex-direction: column-reverse; /* Image on top, form below */
-        width: 90%; /* Adjust width to fit smaller screens */
-        max-width: 400px; /* Prevents stretching on larger devices */
+        flex-direction: column-reverse; 
+        width: 90%; 
+        max-width: 400px; 
         padding: 20px;
         text-align: center;
     }
     .profile-pic {
-        max-width: 100px; /* Slightly smaller image for better fit */
+        max-width: 100px;
     }
 
     .profile form {
@@ -125,15 +125,15 @@ textarea::placeholder {
 
     .profile input,
     textarea {
-        width: 100%; /* Full width input fields */
-        min-width: auto; /* Prevents fixed width issues */
+        width: 100%; 
+        min-width: auto;
     }
     .profile form{
         width: 60%;
         margin: 0 auto;
     }
     .profile form button {
-        width: 50%; /* Reduce button width */
-        margin: 0 auto; /* Center the button */
+        width: 50%; 
+        margin: 0 auto; 
     }
 }
