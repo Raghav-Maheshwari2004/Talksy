@@ -106,24 +106,34 @@ textarea::placeholder {
         max-width: 120px;
     }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .profile-container {
-        padding: 15px;
+        flex-direction: column-reverse; /* Image on top, form below */
+        width: 90%; /* Adjust width to fit smaller screens */
+        max-width: 400px; /* Prevents stretching on larger devices */
+        padding: 20px;
+        text-align: center;
+    }
+    .profile-pic {
+        max-width: 100px; /* Slightly smaller image for better fit */
     }
 
     .profile form {
-        gap: 15px;
+        width: 100%;
+        padding: 20px;
     }
 
-    .profile input, 
+    .profile input,
     textarea {
-        padding: 8px;
-        font-size: 14px;
+        width: 100%; /* Full width input fields */
+        min-width: auto; /* Prevents fixed width issues */
     }
-
+    .profile form{
+        width: 60%;
+        margin: 0 auto;
+    }
     .profile form button {
-        padding: 8px;
-        font-size: 14px;
+        width: 50%; /* Reduce button width */
+        margin: 0 auto; /* Center the button */
     }
 }
